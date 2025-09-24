@@ -21,78 +21,78 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bodoni bg-[#f9f9ff]">
+<body class="bodoni">
 
-  <header class="w-full sticky top-0 z-[999]">
+  <header class="sticky top-0 w-full">
     <!-- navbar section -->
-    <div class="navbar-container">
-      <div class="flex sm:p-5 justify-between items-center bg-base-100 shadow-sm bg-[#9873f9]">
-        <div class="flex-1">
-          <a href="./index.html" class="sm:text-4xl text-2xl text-white">D X</a>
+    <nav class="flex sm:p-5 justify-between items-center shadow-sm bg-[#9873f9] w-full">
+      <div class="flex-1">
+        <a href="./index.html" class="sm:text-4xl text-2xl text-white">D X</a>
+      </div>
+      <div class="list-menu hidden sm:flex">
+        <ul class="flex justify-center items-center gap-3 text-white text-[20px]">
+          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#home">Home</a></li>
+          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#about">About</a></li>
+          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#projects">Projects</a></li>
+          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#contact">Contact us</a></li>
+          <button
+            class="hover:text-[#9873f9] hover:border-[#9873f9] btn border-[2px] border-black bg-white text-black text-[20px] p-5"><a
+              href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf">Download Resume</a><i
+              class="fa-regular fa-circle-down"></i></button>
+        </ul>
+      </div>
+      <div class="flex-none">
+        <div class="dropdown dropdown-end">
         </div>
-        <div class="list-menu hidden sm:flex">
-          <ul class="flex justify-center items-center gap-3 text-white text-[20px]">
-            <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#home">Home</a></li>
-            <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#home">About</a></li>
-            <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#projects">Projects</a></li>
-            <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#contact">Contact us</a></li>
-            <button
-              class="hover:text-[#9873f9] hover:border-[#9873f9] btn border-[2px] border-black bg-white text-black text-[20px] p-5"><a
-                href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf">Download Resume</a><i
-                class="fa-regular fa-circle-down"></i></button>
-          </ul>
-        </div>
-        <div class="flex-none">
-          <div class="dropdown dropdown-end">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn-circle avatar sm:hidden">
+            <div class="menubar">
+              <i class="fa-solid text-center fa-bars text-2xl text-white"></i>
+            </div>
           </div>
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn-circle avatar sm:hidden">
-              <div class="menubar">
-                <!-- profile image -->
-                <i class="fa-solid text-center fa-bars text-2xl text-white"></i>
-              </div>
-            </div>
-            <div class="w-full">
-              <ul tabindex="0"
-                class="sm:invisible  visible menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[15rem] p-5 text-black h-[400px] bg-white/20 backdrop-blur-md border border-white/60 shadow-lg font-bold">
-                <li><a href="#home" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                    <i class="fa-regular fa-house"></i>
-                    Home
-                  </a></li>
-                <li><a href="#home" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                    <i class="fa-regular fa-user"></i>
-                    About us
-                  </a></li>
-                <li><a href="#projects" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                    <i class="fa-regular fa-list-check"></i>
-                    Projects
-                  </a></li>
-                <li><a href="#contact" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                    <i class="fa-regular fa-address-card"></i>
-                    Contact us
-                  </a></li>
-                <li><a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf"
-                    class="text-[1rem] hover:bg-white hover:text-black p-2">
-                    <i class="fa-regular fa-circle-down"></i>
-                    Download Resume</a></li>
-              </ul>
-            </div>
+          <div class="w-full">
+            <ul tabindex="0"
+              class="sm:invisible  visible menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[15rem] p-5 text-black h-[400px] bg-white/20 backdrop-blur-md border border-white/60 shadow-lg font-bold">
+              <li><a href="#home" class="text-[1rem] hover:bg-white hover:text-black p-2">
+                  <i class="fa-regular fa-house"></i>
+                  Home
+                </a></li>
+              <li><a href="#about" class="text-[1rem] hover:bg-white hover:text-black p-2">
+                  <i class="fa-regular fa-user"></i>
+                  About us
+                </a></li>
+              <li><a href="#projects" class="text-[1rem] hover:bg-white hover:text-black p-2">
+                  <i class="fa-regular fa-list-check"></i>
+                  Projects
+                </a></li>
+              <li><a href="#contact" class="text-[1rem] hover:bg-white hover:text-black p-2">
+                  <i class="fa-regular fa-address-card"></i>
+                  Contact us
+                </a></li>
+              <li><a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf"
+                  class="text-[1rem] hover:bg-white hover:text-black p-2">
+                  <i class="fa-regular fa-circle-down"></i>
+                  Download Resume</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <main>
     <section id="home"
       class="about-container flex sm:flex-row flex-col-reverse justify-center items-center gap-4 mt-[40px] sm:h-[80vh] sm:p-5 p-2">
       <div class="left-text w-[100%]">
-        <h1 class="sm:text-7xl text-3xl font-bold">Hi, I'<span class="text-[#9974f9]">m</span> Sumon Barmon</h1>
+        <h1 class="sm:text-7xl text-3xl font-bold">Hi, I'<span class="text-[#9974f9]">m</span> Sumon 👋🏻</h1>
         <p class="sm:text-2xl text-[1rem] mt-1">Web Developer || React Developer || Django Developer</p>
-        <p class="sm:text-[20px] text-[1rem] mt-1">I am an enthusiastic JavaScript developer with knowing some framework
-          for the
-          frontend and the backend. I know Basic PHP and MySQL but basically a MERN
-          developer.</p>
+        <p class="sm:text-[20px] text-[1rem] mt-1">I am a passionate <span class="text-[#9974f9] font-semibold">Web
+            Developer</span> with experience in building
+          responsive and modern websites using HTML, CSS, JavaScript, Tailwind CSS, and frameworks like React and
+          Django.
+
+          My goal is to create clean, user-friendly, and visually appealing web applications. I love learning new
+          technologies and improving my problem-solving skills.</p>
         <!-- Social Logo section -->
         <h1 class="font-bold text-[20px] sm:text-2xl mt-2 mb-1">Social Links:</h1>
         <div class="text-2xl flex items-center gap-4 sm:text-4xl">
@@ -106,17 +106,66 @@
               class="fa-regular fa-circle-down"></i></button>
         </div>
       </div>
+      <!-- Profile img section -->
       <div class="image-container flex justify-center items-center w-[100%]">
         <div
-          class="img-box bg-[#9974f9] rounded-full aspect-square overflow-hidden w-[80%] sm:w-[60%] flex justify-center items-center">
-          <img class="w-full object-cover object-top sm:mt-[80px] mt-[50px]"
+          class="img-box bg-[#9974f9] rounded-full aspect-square overflow-hidden w-[80%] sm:w-[58%] flex justify-center items-center">
+          <img class="w-full object-cover object-top sm:mt-[100px] mt-[80px]"
             src="./Assets/5d24a457-4993-49f9-b44d-84dc7338b7c0-removebg-preview.png" alt="">
         </div>
       </div>
     </section>
+    <!-- About Section -->
+    <section id="about" class="py-7 px-2 bg-[#f9f9ff]">
+      <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#9873f9] mb-12">
+          About Me
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Left-Image -->
+          <div class="flex justify-center">
+            <img src="./Assets/about-seciton-image.jpg" alt="Profile photo"
+              class="sm:w-90 w-60 sm:h-90 h-60 object-cover rounded-full shadow-lg border-4 border-[#9873f9]" />
+          </div>
+          <!-- Education Section -->
+          <div>
+            <h1 class="text-2xl font-semibold text-gray-800 mb-6">Education</h1>
+            <div class=" border-l-4 border-[#9873f9] pl-6 space-y-6">
+              <div>
+                <h1 class="text-xl font-semibold text-gray-800">Laboratory School & College, Rajendrapur</h1>
+                <p class="text-gray-600">Examination: Secondary School Certificate</p>
+                <p class="text-gray-600">Background: Commerce
+                  <br>
+                  Board: Dhaka Board <br>
+                  Passing year: 2020
+                </p>
+                <p class="text-gray-600">Schooling</p>
+              </div>
+              <div>
+                <h1 class="text-xl font-semibold text-gray-800">Model Institute of Science and Technology (MIST)</h1>
+                <p class="text-gray-600">Diploma in Computer Science & Engineering (Final Year)</p>
+              </div>
+            </div>
+
+            <!-- Problem Solving -->
+            <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">Problem Solving</h3>
+            <p class="text-[18px] leading-relaxed">
+              I am an active <span class="font-bold text-[#9873f9]">Competitive Programmer (CP)</span>
+              and enjoy solving challenging problems on platforms like
+              <span class="font-bold">Codeforces</span>.
+              Problem-solving helps me think critically and improve my algorithmic
+              and analytical skills, which I apply to both competitive programming
+              and real-world software development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ================= Projects Section ================= -->
-    <section id="projects" class="mt-6 px-5 sm:px-20 bg-[#f9f9ff] sm:mt-[60px] min-h-[80vh]">
+    <section id="projects" class="mt-6 px-2 py-7 sm:px-20 bg-[#f9f9ff] sm:mt-[60px] min-h-[80vh]">
       <h2 class="text-4xl font-bold text-center text-[#9974f9] mb-6 sm:mb-[60px]">My Projects</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
