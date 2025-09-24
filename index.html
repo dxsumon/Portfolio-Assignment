@@ -52,7 +52,7 @@
           </div>
           <div class="w-full">
             <ul tabindex="0"
-              class="sm:invisible  visible menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[15rem] p-5 text-black h-[400px] bg-white/20 backdrop-blur-md border border-white/60 shadow-lg font-bold">
+              class="sm:hidden flex menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[15rem] p-5 text-black h-[400px] bg-white/20 backdrop-blur-md border border-white/60 shadow-lg font-bold">
               <li><a href="#home" class="text-[1rem] hover:bg-white hover:text-black p-2">
                   <i class="fa-regular fa-house"></i>
                   Home
@@ -81,6 +81,7 @@
   </header>
 
   <main>
+    <!-- Home Section -->
     <section id="home"
       class="about-container flex sm:flex-row flex-col-reverse justify-center items-center gap-4 mt-[40px] sm:h-[80vh] sm:p-5 p-2">
       <div class="left-text w-[100%]">
@@ -109,7 +110,7 @@
       <!-- Profile img section -->
       <div class="image-container flex justify-center items-center w-[100%]">
         <div
-          class="img-box bg-[#9974f9] rounded-full aspect-square overflow-hidden w-[80%] sm:w-[58%] flex justify-center items-center">
+          class="img-box bg-[#9974f9] rounded-full aspect-square overflow-hidden w-[60%] sm:w-[58%] flex justify-center items-center">
           <img class="w-full object-cover object-top sm:mt-[100px] mt-[80px]"
             src="./Assets/5d24a457-4993-49f9-b44d-84dc7338b7c0-removebg-preview.png" alt="">
         </div>
@@ -133,6 +134,10 @@
             <h1 class="text-2xl font-semibold text-gray-800 mb-6">Education</h1>
             <div class=" border-l-4 border-[#9873f9] pl-6 space-y-6">
               <div>
+                <h1 class="text-xl font-semibold text-gray-800">Model Institute of Science and Technology (MIST)</h1>
+                <p class="text-gray-600">Diploma in Computer Science & Engineering (Final Year)</p>
+              </div>
+              <div>
                 <h1 class="text-xl font-semibold text-gray-800">Laboratory School & College, Rajendrapur</h1>
                 <p class="text-gray-600">Examination: Secondary School Certificate</p>
                 <p class="text-gray-600">Background: Commerce
@@ -141,10 +146,6 @@
                   Passing year: 2020
                 </p>
                 <p class="text-gray-600">Schooling</p>
-              </div>
-              <div>
-                <h1 class="text-xl font-semibold text-gray-800">Model Institute of Science and Technology (MIST)</h1>
-                <p class="text-gray-600">Diploma in Computer Science & Engineering (Final Year)</p>
               </div>
             </div>
 
@@ -222,30 +223,36 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-5 sm:px-20">
-      <h2 class="text-4xl font-bold text-center text-[#9974f9] mb-12">Contact Me</h2>
-      <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-2xl p-8">
-        <form action="#" method="" class="space-y-5">
-          <div>
-            <label class="block text-gray-700 mb-2">Name</label>
-            <input type="text" placeholder="Your Name"
-              class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]" required>
-          </div>
-          <div>
-            <label class="block text-gray-700 mb-2">Email</label>
-            <input type="email" placeholder="Your Email"
-              class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]" required>
-          </div>
-          <div>
-            <label class="block text-gray-700 mb-2">Message</label>
-            <textarea rows="4" placeholder="Write your message..."
-              class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]"></textarea>
-          </div>
-          <button type="submit"
-            class="w-full bg-[#9974f9] text-white py-3 rounded-lg font-bold hover:bg-[#7a5cd6] transition">
-            Send Message
-          </button>
-        </form>
+    <section id="contact" class="contact-container flex justify-around items-center">
+      <div class="py-16 px-5 sm:px-20 w-[100%]">
+        <h2 class="text-4xl font-bold text-center text-[#9974f9] mb-12">Contact Me</h2>
+        <div class="flex justify-center items-center">
+
+          <img class="" src="./Assets/email.png" alt="">
+        </div>
+        <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-2xl p-8">
+          <form action="#" method="" class="space-y-5">
+            <div>
+              <label class="block text-gray-700 mb-2">Name</label>
+              <input type="text" placeholder="Your Name"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Email</label>
+              <input type="email" placeholder="Your Email"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Message</label>
+              <textarea rows="4" placeholder="Write your message..."
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-[#9974f9] text-white py-3 rounded-lg font-bold hover:bg-[#7a5cd6] transition">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
