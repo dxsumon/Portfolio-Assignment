@@ -19,56 +19,56 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Fav icon -->
-     <link rel="shortcut icon" href="./Assets/FavIcon.jpg.png" type="image/x-icon">
+  <!-- Fav icon -->
+  <link rel="shortcut icon" href="./Assets/FavIcon.jpg.png" type="image/x-icon">
 </head>
 
 <body class="bodoni">
 
   <header class="sticky top-0 w-full z-50">
-  <!-- navbar section -->
-  <nav class="navbar bg-[#9873f9] shadow-sm">
-    <!-- Logo -->
-    <div class="flex-1">
-      <a href="./index.html" class="sm:text-4xl text-2xl text-white font-bold">D X</a>
-    </div>
-
-    <!-- Desktop Menu -->
-    <div class="hidden sm:flex">
-      <ul class="menu menu-horizontal px-1 text-white text-lg font-medium gap-2">
-        <li><a href="#home" class="hover:underline">Home</a></li>
-        <li><a href="#about" class="hover:underline">About</a></li>
-        <li><a href="#projects" class="hover:underline">Projects</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-        <li>
-          <a href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf"
-             class="btn border-2 border-black bg-white text-black hover:text-[#9873f9] hover:border-[#9873f9]">
-            Download Resume <i class="fa-regular fa-circle-down ml-1"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Menu bar section -->
-    <div class="sm:hidden dropdown dropdown-end">
-      <div tabindex="0" role="button" class="">
-        <i class="hover:text-slate-300 fa-solid fa-bars text-2xl text-white"></i>
+    <!-- navbar section -->
+    <nav class="navbar bg-[#9873f9] shadow-sm">
+      <!-- Logo -->
+      <div class="flex-1">
+        <a href="./index.html" class="sm:text-4xl text-2xl text-white font-bold">D X</a>
       </div>
-      <ul tabindex="0"
+
+      <!-- Desktop Menu -->
+      <div class="hidden sm:flex">
+        <ul class="menu menu-horizontal px-1 text-white text-lg font-medium gap-2">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+          <li>
+            <a href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf"
+              class="btn border-2 border-black bg-white text-black hover:text-[#9873f9] hover:border-[#9873f9]">
+              Download Resume <i class="fa-regular fa-circle-down ml-1"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Menu bar section -->
+      <div class="sm:hidden dropdown dropdown-end">
+        <div tabindex="0" role="button" class="">
+          <i class="hover:text-slate-300 fa-solid fa-bars text-2xl text-white"></i>
+        </div>
+        <ul tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-white/90 backdrop-blur-md rounded-box w-52 text-black font-medium">
-        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
-        <li><a href="#projects"><i class="fa-solid fa-list-check"></i> Projects</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
-        <li>
-          <a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf">
-            <i class="fa-solid fa-circle-down"></i> Download Resume
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+          <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-list-check"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+          <li>
+            <a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf">
+              <i class="fa-solid fa-circle-down"></i> Download Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 
   <main>
@@ -102,8 +102,7 @@
       <div class="image-container flex justify-center items-center w-[100%]">
         <div
           class="img-box bg-[#9974f9] rounded-full aspect-square overflow-hidden w-[60%] sm:w-[58%] flex justify-center items-center">
-          <img class="w-full object-cover object-top sm:mt-[100px] mt-[80px]"
-            src="./Assets/sumon_bg.png" alt="">
+          <img class="w-full object-cover object-top sm:mt-[100px] mt-[80px]" src="./Assets/sumon_bg.png" alt="">
         </div>
       </div>
     </section>
@@ -207,7 +206,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Add later more project -->
       <div class="mt-6 w-full flex justify-center items-center">
         <button
@@ -242,10 +241,22 @@
               <textarea rows="4" placeholder="Write your message..."
                 class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9974f9]"></textarea>
             </div>
-            <button type="submit"
-              class="w-full bg-[#9974f9] text-white py-3 rounded-lg font-bold hover:bg-[#7a5cd6] transition">
-              Send Message
-            </button>
+
+            <!-- Modal section -->
+            <!-- Trigger button -->
+            <label for="my_modal" class="btn bg-[#9974f9] text-white w-full">Send Message</label>
+            <!-- The modal -->
+            <input type="checkbox" id="my_modal" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box ">
+                <h3 class="font-bold text-lg">Message Sent!</h3>
+                <p class="py-4 ">Thanks for contacting me. I will reply soon.</p>
+                <div class="modal-action">
+                  <label for="my_modal" class="btn">Close</label>
+                </div>
+              </div>
+            </div>
+
           </form>
         </div>
       </div>
