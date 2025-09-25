@@ -25,62 +25,51 @@
 
 <body class="bodoni">
 
-  <header class="sticky top-0 w-full">
-    <!-- navbar section -->
-    <nav class="flex sm:p-5 justify-between items-center shadow-sm bg-[#9873f9] w-full">
-      <div class="flex-1">
-        <a href="./index.html" class="sm:text-4xl text-2xl text-white">D X</a>
+  <header class="sticky top-0 w-full z-50">
+  <!-- navbar section -->
+  <nav class="navbar bg-[#9873f9] shadow-sm">
+    <!-- Logo -->
+    <div class="flex-1">
+      <a href="./index.html" class="sm:text-4xl text-2xl text-white font-bold">D X</a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden sm:flex">
+      <ul class="menu menu-horizontal px-1 text-white text-lg font-medium gap-2">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+        <li>
+          <a href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf"
+             class="btn border-2 border-black bg-white text-black hover:text-[#9873f9] hover:border-[#9873f9]">
+            Download Resume <i class="fa-regular fa-circle-down ml-1"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Menu bar section -->
+    <div class="sm:hidden dropdown dropdown-end">
+      <div tabindex="0" role="button" class="">
+        <i class="hover:text-slate-300 fa-solid fa-bars text-2xl text-white"></i>
       </div>
-      <div class="list-menu hidden sm:flex">
-        <ul class="flex justify-center items-center gap-3 text-white text-[20px]">
-          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#home">Home</a></li>
-          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#about">About</a></li>
-          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#projects">Projects</a></li>
-          <li class="hover:underline hover:text-gray-300 cursor-pointer"><a href="#contact">Contact us</a></li>
-          <button
-            class="hover:text-[#9873f9] hover:border-[#9873f9] btn border-[2px] border-black bg-white text-black text-[20px] p-5"><a
-              href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf">Download Resume</a><i
-              class="fa-regular fa-circle-down"></i></button>
-        </ul>
-      </div>
-      <div class="flex-none">
-        <div class="dropdown dropdown-end">
-        </div>
-        <div class="dropdown dropdown-end">
-          <div tabindex="0" role="button" class="btn-circle avatar sm:hidden">
-            <div class="menubar">
-              <i class="fa-solid text-center fa-bars text-2xl text-white"></i>
-            </div>
-          </div>
-          <div class="w-full">
-            <ul tabindex="0"
-              class="sm:hidden flex menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[15rem] p-5 text-black h-[400px] bg-white/20 backdrop-blur-md border border-white/60 shadow-lg font-bold">
-              <li><a href="#home" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                  <i class="fa-regular fa-house"></i>
-                  Home
-                </a></li>
-              <li><a href="#about" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                  <i class="fa-regular fa-user"></i>
-                  About us
-                </a></li>
-              <li><a href="#projects" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                  <i class="fa-regular fa-list-check"></i>
-                  Projects
-                </a></li>
-              <li><a href="#contact" class="text-[1rem] hover:bg-white hover:text-black p-2">
-                  <i class="fa-regular fa-address-card"></i>
-                  Contact us
-                </a></li>
-              <li><a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf"
-                  class="text-[1rem] hover:bg-white hover:text-black p-2">
-                  <i class="fa-regular fa-circle-down"></i>
-                  Download Resume</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+      <ul tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-white/90 backdrop-blur-md rounded-box w-52 text-black font-medium">
+        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-list-check"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+        <li>
+          <a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf">
+            <i class="fa-solid fa-circle-down"></i> Download Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
 
   <main>
     <!-- Home Section -->
