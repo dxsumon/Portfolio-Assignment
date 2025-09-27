@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <!-- Daisy ui CDN Link -->
+  <!-- Tailwind And Daisy ui CDN Link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- Google font Start-->
+  <!-- Google font Start -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -21,54 +21,25 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Fav icon -->
   <link rel="shortcut icon" href="./Assets/FavIcon.jpg.png" type="image/x-icon">
+
+  <!-- Css -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+  .bodoni{
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  }
+  </style>
 </head>
 
 <body class="bodoni">
 
   <header class="sticky top-0 w-full z-50">
-    <!-- navbar section -->
-    <nav class="navbar bg-[#9873f9] shadow-sm hidden">
-      <!-- Logo -->
-      <div class="flex-1">
-        <a href="./index.html" class="sm:text-4xl text-2xl text-white font-bold">D X</a>
-      </div>
-
-      <!-- Desktop Menu -->
-      <div class="hidden sm:flex">
-        <ul class="menu menu-horizontal px-1 text-white text-lg font-medium gap-2">
-          <li><a href="#home" class="hover:underline">Home</a></li>
-          <li><a href="#about" class="hover:underline">About</a></li>
-          <li><a href="#projects" class="hover:underline">Projects</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-          <li>
-            <a href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf"
-              class="btn border-2 border-black bg-white text-black hover:text-[#9873f9] hover:border-[#9873f9]">
-              Download Resume <i class="fa-regular fa-circle-down ml-1"></i>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Menu bar section -->
-      <div class="sm:hidden dropdown dropdown-end">
-        <div tabindex="0" role="button" class="">
-          <i class="hover:text-slate-300 fa-solid fa-bars text-2xl text-white"></i>
-        </div>
-        <ul tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-white/90 backdrop-blur-md rounded-box w-52 text-black font-medium">
-          <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
-          <li><a href="#projects"><i class="fa-solid fa-list-check"></i> Projects</a></li>
-          <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
-          <li>
-            <a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf">
-              <i class="fa-solid fa-circle-down"></i> Download Resume
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <!-- New navbar -->
     <nav class="navbar bg-[#9873f9] shadow-md fixed top-0 left-0 w-full z-50 px-4 sm:px-8">
       <!-- Logo -->
@@ -159,9 +130,9 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <!-- Left-Image -->
-          <div class="flex justify-center">
+          <div class="flex justify-center w-60 sm:w-full mx-auto">
             <img src="./Assets/about-seciton-image.jpg" alt="Profile photo"
-              class="sm:w-90 w-60 sm:h-90 h-60 object-cover rounded-full shadow-lg border-4 border-[#9873f9]" />
+              class="sm:w-90 w-full sm:h-90 h-60 object-cover rounded-full shadow-lg border-4 border-[#9873f9]" />
           </div>
           <!-- Education Section -->
           <div>
