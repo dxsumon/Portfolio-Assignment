@@ -44,4 +44,4 @@ Check the live version of the website here:
 
 1. **Clone this repository**
 ```bash
-git clone https://github.com/dxsumon/Portfolio-2.0.git
+git clone https://github.com/dxsumon/Portfolio-Assignment
