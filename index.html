@@ -27,7 +27,7 @@
 
   <header class="sticky top-0 w-full z-50">
     <!-- navbar section -->
-    <nav class="navbar bg-[#9873f9] shadow-sm">
+    <nav class="navbar bg-[#9873f9] shadow-sm hidden">
       <!-- Logo -->
       <div class="flex-1">
         <a href="./index.html" class="sm:text-4xl text-2xl text-white font-bold">D X</a>
@@ -68,6 +68,50 @@
         </ul>
       </div>
     </nav>
+
+    <!-- New navbar -->
+    <nav class="navbar bg-[#9873f9] shadow-md fixed top-0 left-0 w-full z-50 px-4 sm:px-8">
+      <!-- Logo -->
+      <div class="flex-1">
+        <a href="./index.html" class="sm:text-4xl text-2xl text-white font-bold">D X</a>
+      </div>
+      <!-- Hamburger menu bar section -->
+      <div class="hidden sm:flex">
+        <ul class="menu menu-horizontal px-1 text-white text-lg font-medium gap-4">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+          <li>
+            <a href="./Assets/Sumon_CV.pdf" download="Sumon_resume.pdf"
+              class="btn border-2 border-black bg-white text-black hover:text-[#9873f9] hover:border-[#9873f9]">
+              Download Resume <i class="fa-regular fa-circle-down ml-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="sm:hidden dropdown dropdown-end">
+        <div tabindex="0" role="button" class="cursor-pointer">
+          <i class="hover:text-slate-300 fa-solid fa-bars text-2xl text-white"></i>
+        </div>
+        <ul tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[60] p-3 shadow bg-white/95 backdrop-blur-md rounded-box w-52 text-black font-medium">
+          <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-list-check"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+          <li>
+            <a href="./Assets/Sumon_CV.pdf" download="sumon_barmon_resume.pdf">
+              <i class="fa-solid fa-circle-down"></i> Download Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
   </header>
 
 
@@ -140,7 +184,7 @@
 
             <!-- Problem Solving -->
             <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">Problem Solving</h3>
-            <p class="text-[18px] leading-relaxed">
+            <p class="text-[18px] leading-relaxed text-gray-600">
               I am an active <span class="font-bold text-[#9873f9]">Competitive Programmer (CP)</span>
               and enjoy solving challenging problems on platforms like
               <span class="font-bold">Codeforces</span>.
@@ -333,7 +377,8 @@
         <a href="https://github.com/dxsumon" target="_blank" class="hover:text-gray-200 transition">
           <i class="fa-brands fa-github text-xl"></i>
         </a>
-        <a href="https://www.linkedin.com/in/sumon-barmon-259403358/" target="_blank" class="hover:text-gray-200 transition">
+        <a href="https://www.linkedin.com/in/sumon-barmon-259403358/" target="_blank"
+          class="hover:text-gray-200 transition">
           <i class="fa-brands fa-linkedin text-xl"></i>
         </a>
         <a href="mailto:dxsumon14567@gmail.com" class="hover:text-gray-200 transition">
