@@ -1,9 +1,5 @@
 # Portfolio Website 🌐
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/dxsumon/Portfolio-2.0?style=flat-square)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/dxsumon/Portfolio-2.0?style=flat-square)
-![GitHub Language](https://img.shields.io/github/languages/top/dxsumon/Portfolio-2.0?style=flat-square)
-
 This is my personal **Portfolio Website**, built with **HTML**, **Tailwind CSS**, and **DaisyUI**.  
 It showcases my **skills**, **projects**, and **contact information** in a clean, modern, and fully responsive design.
 
@@ -34,6 +30,13 @@ It showcases my **skills**, **projects**, and **contact information** in a clean
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+
+---
+
+## 🔗 Live Demo
+
+Check the live version of the website here:  
+[🌐 Live Demo](https://dx-portfolio.netlify.app/)
 
 ---
 
